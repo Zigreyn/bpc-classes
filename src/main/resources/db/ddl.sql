@@ -10,3 +10,10 @@ CREATE TABLE accounts (
   currency        VARCHAR(3),
   amount          integer (20)
 );
+
+CREATE TABLE currency_rates (
+  id                 INTEGER PRIMARY KEY,
+  currency_from      VARCHAR(3),
+  currency_to        VARCHAR(3),
+  multiplier        float (20)
+);
